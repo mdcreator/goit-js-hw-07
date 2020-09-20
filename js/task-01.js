@@ -12,7 +12,7 @@
 // const categoriesEl = document.querySelector('#categories');
 // console.log('categoriesEl', categoriesEl);
 
-const magicBtn = document.querySelector('.js-magic-btn');
+const magicBtn = document.querySelector('.js-magic-btn-01');
 magicBtn.addEventListener('click', () => {
   const categoriesItemsEl = document.querySelectorAll('li.item');
   // console.log('categoriesItemsEl', categoriesItemsEl);
