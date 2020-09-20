@@ -16,17 +16,10 @@ const ingredients = [
 
 const ingredientsEl = document.querySelector('#ingredients');
 
-const ingredientList = ingredient => {
+const elements = ingredients.map(element => {
   const listEl = document.createElement('li');
-
-  listEl.textContent = ingredient;
-
+  listEl.textContent = element;
   return listEl;
-};
-// = array => array.map(({ 'li' }) => li)
-// {
-//
-//   const titleEl.classList.add('page-title');
-// };
-// console.log(ingredientList);
-// ingredientsEl.add('li');
+});
+
+ingredientsEl.append(...elements);
