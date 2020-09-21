@@ -31,27 +31,6 @@ magicBtn.addEventListener('click', () => {
 
   const imagesEl = document.querySelector('#gallery');
 
-  //   galleryImagesEl.forEach(element => {
-  //     const listEl = element.querySelector('li');
-  //     const imageEl = element.querySelectorAll('img');
-
-  // imagesEl.insertAdjacentHTML('beforebegin', '<h2>Галерея</h2>');
-  // imagesEl.insertAdjacentHTML('afterbegin', '<li><img src = $></li>');
-  // imagesEl.insertAdjacentHTML('beforeend', '<li>beforeend item</li>');
-
-  // const elements = images.map(element => {
-  //   const listEl = document.createElement('li');
-  //   const galleryImage = ({ url, alt }) =>
-  //     '<li><img src = ${img.url} alt = ${img.alt}</li>';
-  //   //   listEl.textContent = element;
-  //   return listEl;
-  // });
-
-  // imagesEl.append(...elements);
-  // imagesEl.insertAdjacentHTML('beforebegin', '<h2>Галерея</h2>');
-
-  // const galleryImage = ({url, alt}) =>'<li><img src = ${img.url} alt = ${img.alt class='img'></li>';
-
   const elements = images.map(img => {
     const listEl = document.createElement('li');
     listEl.insertAdjacentHTML(
