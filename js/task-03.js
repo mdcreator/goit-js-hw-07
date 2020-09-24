@@ -35,7 +35,7 @@ magicBtn.addEventListener('click', () => {
     const listEl = document.createElement('li');
     listEl.insertAdjacentHTML(
       'beforeend',
-      `<img src="${img.url}" alt="${img.alt}" width="300">`,
+      `<img src="${img.url}" alt="${img.alt}">`,
     );
     return listEl;
   });

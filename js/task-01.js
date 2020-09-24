@@ -12,22 +12,19 @@
 // const categoriesEl = document.querySelector('#categories');
 // console.log('categoriesEl', categoriesEl);
 
-const magicBtn = document.querySelector('.js-magic-btn-01');
-magicBtn.addEventListener('click', () => {
-  const categoriesItemsEl = document.querySelectorAll('li.item');
-  // console.log('categoriesItemsEl', categoriesItemsEl);
+const categoriesItemsEl = document.querySelectorAll('li.item');
+// console.log('categoriesItemsEl', categoriesItemsEl);
 
-  const showElementsQuantity = elements =>
-    `В списке ${elements.length} категории.`;
-  console.log(showElementsQuantity(categoriesItemsEl));
+const showElementsQuantity = elements =>
+  `В списке ${elements.length} категории.`;
+console.log(showElementsQuantity(categoriesItemsEl));
 
-  categoriesItemsEl.forEach(element => {
-    const titleEl = element.querySelector('h2');
-    const quantityEl = element.querySelectorAll('li');
+categoriesItemsEl.forEach(element => {
+  const titleEl = element.querySelector('h2');
+  const quantityEl = element.querySelectorAll('li');
 
-    console.log(
-      `Категория: ${titleEl.textContent}
+  console.log(
+    `Категория: ${titleEl.textContent}
     Количество элементов: ${quantityEl.length}`,
-    );
-  });
+  );
 });
