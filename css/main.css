@@ -352,13 +352,13 @@ button {
 
 @media screen and (min-width: 768px) {
   .task-card {
-    width: calc((100% - 40px) / 2);
+    width: calc((100% - 40px * 4) / 2);
   }
 }
 
 @media screen and (min-width: 1199px) {
   .task-card {
-    width: calc((100% - 40px) / 3);
+    width: calc((100% - 40px * 8) / 4);
   }
 }
 

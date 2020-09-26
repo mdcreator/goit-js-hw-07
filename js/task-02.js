@@ -24,4 +24,5 @@ magicBtn.addEventListener('click', () => {
   });
 
   ingredientsEl.append(...elements);
+  magicBtn.disabled = true;
 });

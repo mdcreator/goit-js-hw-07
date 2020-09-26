@@ -42,4 +42,5 @@ magicBtn.addEventListener('click', () => {
 
   imagesEl.append(...elements);
   imagesEl.insertAdjacentHTML('beforebegin', '<h2>Галерея</h2>');
+  magicBtn.disabled = true;
 });

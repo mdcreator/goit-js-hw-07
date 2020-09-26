@@ -75,11 +75,11 @@ button {
   box-sizing: border-box;
 
   @media screen and (min-width: $tablets) {
-    width: calc((100% - 40px) / 2);
+    width: calc((100% - 40px * 4) / 2);
   }
 
   @media screen and (min-width: $desktop-min) {
-    width: calc((100% - 40px) / 3);
+    width: calc((100% - 40px * 8) / 4);
   }
 }
 
