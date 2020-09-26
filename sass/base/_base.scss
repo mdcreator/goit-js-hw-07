@@ -1,0 +1,108 @@
+body {
+  color: $primary-color-text;
+  background-color: $bg-color;
+  letter-spacing: 0.02em;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+  @media screen and (min-width: $tablets) {
+    width: $tablets;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+  /* margin: 0; */
+}
+
+p,
+h1,
+h2 {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+button {
+  display: inline-block;
+  margin: 5px;
+  padding: 6px 22px;
+  text-align: center;
+  height: 38px;
+  border-radius: 4px;
+  color: $primary-color-text;
+  font-weight: 600;
+  font-size: 12px;
+  border: 1px solid $accent-color;
+  cursor: pointer;
+}
+
+.card {
+  justify-content: center;
+
+  @media screen and (min-width: $tablets) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  // @media screen and (min-width: $desktop) {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  // }
+}
+.task-card {
+  list-style: none;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+
+  background: #fff;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+
+  @media screen and (min-width: $tablets) {
+    width: calc((100% - 40px) / 2);
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    width: calc((100% - 40px) / 3);
+  }
+}
+
+#gallery {
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
