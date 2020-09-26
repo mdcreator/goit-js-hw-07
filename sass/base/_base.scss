@@ -30,7 +30,6 @@ img {
   max-width: 100%;
   height: auto;
   margin-bottom: 5px;
-  /* margin: 0; */
 }
 
 p,
@@ -62,10 +61,6 @@ button {
     display: flex;
     flex-wrap: wrap;
   }
-  // @media screen and (min-width: $desktop) {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  // }
 }
 .task-card {
   list-style: none;
